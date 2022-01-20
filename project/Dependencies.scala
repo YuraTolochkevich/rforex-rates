@@ -15,6 +15,7 @@ object Dependencies {
     val scalaCheck          = "1.15.3"
     val scalaTest           = "3.2.7"
     val catsScalaCheck      = "0.3.0"
+    val enumeratumVersion = "1.7.0"
   }
 
   object Libraries {
@@ -34,7 +35,8 @@ object Dependencies {
     lazy val circeGenericExt     = circe("circe-generic-extras")
     lazy val circeParser         = circe("circe-parser")
     lazy val pureConfig          = "com.github.pureconfig" %% "pureconfig"                 % Versions.pureConfig
-    lazy val pureConfigHttp4s = "com.github.pureconfig"    %% "pureconfig-http4s"          % Versions.pureConfig
+    lazy val pureConfigHttp4s    = "com.github.pureconfig" %% "pureconfig-http4s"          % Versions.pureConfig
+    lazy val enumeratum          = "com.beachape"          %% "enumeratum"                 % Versions.enumeratumVersion
     // Compiler plugins
     lazy val kindProjector       = "org.typelevel"         %% "kind-projector"             % Versions.kindProjector
 
